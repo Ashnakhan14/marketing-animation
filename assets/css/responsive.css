@@ -17,7 +17,9 @@
   h1.banner-heading {
     font-size: 2.85rem;
   }
-
+ul.header-nav {
+    display: none;
+}
   .banner-content {
     padding-top: 1rem;
   }
