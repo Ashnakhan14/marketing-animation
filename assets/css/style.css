@@ -155,7 +155,7 @@ i.bx {
 
 /* .header  */
 .header {
-  padding: 1rem 0;
+  padding: 2rem 0 1rem;
 }
 
 .header-content {
@@ -173,7 +173,7 @@ ul.header-nav {
 }
 
 .header-logo {
-  font-size: 1.45rem;
+  font-size: 1.65rem;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -202,19 +202,25 @@ ul.header-nav li a:hover {
 }
 /* banner */
 .banner {
-  padding: 2rem 0 0;
+  padding: 1rem 0 0;
   width: 100%;
   height: 100%;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .banner-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .banner-img {
-  width: 513px;
-  height: 373px;
+   width: 549px;
+   height: 542px;
+   object-fit: cover;
 }
 
 h1.banner-heading {
@@ -235,16 +241,19 @@ h1.banner-heading {
   /* padding: 1rem 0; */
 }
 .brand-imgs img {
-  width: 100%;
-  height: 100%;
+  width: 124px;
+  height: auto;
   object-fit: cover;
 }
 
 .brand-imgs {
-  width: 122px;
   display: flex;
   align-items: center;
-  gap: 75px;
+  gap: 98px;
+  justify-content: center;
+  
+  
+   /* agar pics ko center align karna ho horizontally */
 }
 /* .serivces  */
 .serivces {
@@ -381,11 +390,11 @@ footer.footer {
   position: absolute;
   left: 325px;
   border-radius: 2px;
+  display: none;
 }
 .footer-content {
     position: relative;
 }
-.section-content {}
 
 .serivces .section-content {
     margin-bottom: 1.5rem;
@@ -398,4 +407,7 @@ footer.footer {
   position: fixed;
   border-radius: 50%;
   z-index: 9;
+}
+.banner-content {
+  padding-top: 3rem;
 }

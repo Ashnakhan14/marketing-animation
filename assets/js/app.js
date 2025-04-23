@@ -17,11 +17,19 @@ tl.from(".banner-img", {
     opacity: 0,
     duration: 0.5,
 } ,"-=0.3");
-tl.from(".brand-imgs img", {
-    opacity: 0,
-    y: 100,
-    duration: 0.5,
-    stagger:0.2
+gsap.from(".brand-imgs img", {
+  opacity: 0,
+  y: 100,
+  duration: 0.2,
+  stagger: 0.2,
+  scrollTrigger: {
+      trigger: ".brand-imgs",
+      scroller: "body",
+      start: "top 70%", // adjust based on when you want the animation
+      end: "top 40%",
+      scrub: 1,
+      // markers: true
+  }
 });
 }
 
